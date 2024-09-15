@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./IMGS/adminPanel.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Admin Panel</title>
+    <script defer src="./JS/scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Admin Panel</h1>
+      <button class="logout-btn" id="logout-button">
+        <img src="./IMGS/logOut.svg" alt="logOut.svg" /> Logout
+      </button>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2 style="padding-left: 40%; font-weight: bold; font-size: 30px;">
+          Panel
+        </h2>
+        <form id="product-form">
+          <h3 style="margin: 15px 0; font-weight: bold; font-size: 25px;">
+            Add Product
+          </h3>
+          <label style="font-weight: bold; font-size: 20px;" for="product-name"
+            >Name</label
+          >
+          <input
+            style="font-size: 16px;"
+            type="text"
+            id="product-name"
+            placeholder="Product Name"
+            required
+          />
+          <label style="font-weight: bold; font-size: 20px;" for="product-price"
+            >Price</label
+          >
+          <input
+            style="font-size: 16px;"
+            type="number"
+            id="product-price"
+            placeholder="Product Price"
+            required
+          />
+          <label
+            style="font-weight: bold; font-size: 20px;"
+            for="product-description"
+            >Description</label
+          >
+          <input
+            style="font-size: 16px;"
+            type="text"
+            id="product-description"
+            placeholder="Product Description"
+            required
+          />
+          <button class="add-btn" type="submit">Add Product</button>
+          <button class="btn" type="submit">Add</button>
+        </form>
+        <div id="product-list">
+          <h3 style="margin-top: 20px; font-weight: bold; font-size: 20px;">
+            Product List
+          </h3>
+          <ul id="products"></ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Admin Panel</p>
+    </footer>
+
+    <script class="./JS/scripts.js"></script>
+  </body>
+</html>
